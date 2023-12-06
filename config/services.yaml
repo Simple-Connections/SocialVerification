@@ -1,0 +1,8 @@
+services:
+    simple_connections_social_verification.apple_verification_service:
+      class: SocialVerification\Verification\AppleVerificationService
+      arguments: 
+          $applePemKeyBase64: '%env(APPLE_ES256_PEM_KEY_BASE64_ENCODED)%'
+          $kid: '%env(APPLE_KEY_ID)%'
+          $teamId: '%env(APPLE_TEAM_ID)%'
+          $bundleId: '%env(APPLE_BUNDLE_ID)%'

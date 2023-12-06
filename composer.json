@@ -1,0 +1,21 @@
+{
+    "name": "simpleconnections/social-verification",
+    "description": "Handle social login tokens from a client and verification",
+    "type": "symfony-bundle",
+    "require": {
+        "php": ">=7.4",
+        "symfony/framework-bundle": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SimpleConnections\\SocialVerification\\": "src/"
+        }
+    },  
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Brett Ludwig",
+            "email": "brett@simpleconnections.ca"
+        }
+    ]
+}
