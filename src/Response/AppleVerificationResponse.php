@@ -1,6 +1,6 @@
 <?php
 
-namespace SimpleConnections\SocialVerification\Response;
+namespace SocialVerification\Response;
 
 use Lcobucci\JWT\Encoding\CannotDecodeContent;
 use Lcobucci\JWT\Encoding\JoseEncoder;

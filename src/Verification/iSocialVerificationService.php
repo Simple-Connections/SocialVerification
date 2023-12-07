@@ -1,8 +1,8 @@
 <?php
 
-namespace SimpleConnections\SocialVerification\Verification;
+namespace SocialVerification\Verification;
 
-use SimpleConnections\SocialVerification\Response\iSocialVerificationResponse;
+use SocialVerification\Response\iSocialVerificationResponse;
 
 interface iSocialVerificationService
 {

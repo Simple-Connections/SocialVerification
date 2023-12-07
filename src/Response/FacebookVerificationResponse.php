@@ -1,6 +1,6 @@
 <?php
 
-namespace SimpleConnections\SocialVerification\Response;
+namespace SocialVerification\Response;
 
 class FacebookVerificationResponse implements iSocialVerificationResponse
 {

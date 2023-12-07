@@ -1,8 +1,18 @@
 services:
-    simple_connections_social_verification.apple_verification_service:
-      class: SocialVerification\Verification\AppleVerificationService
-      arguments: 
-          $applePemKeyBase64: '%env(APPLE_ES256_PEM_KEY_BASE64_ENCODED)%'
-          $kid: '%env(APPLE_KEY_ID)%'
-          $teamId: '%env(APPLE_TEAM_ID)%'
-          $bundleId: '%env(APPLE_BUNDLE_ID)%'
+  _defaults:
+      autowire: true      # Automatically injects dependencies in your services
+      autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+      public: false       # Makes services private by default
+
+  simple_connections_social_verification.apple_verification_service:
+    class: SocialVerification\Verification\AppleVerificationService
+    arguments: 
+        $applePemKeyBase64: '%env(APPLE_ES256_PEM_KEY_BASE64_ENCODED)%'
+        $kid: '%env(APPLE_KEY_ID)%'
+        $teamId: '%env(APPLE_TEAM_ID)%'
+        $bundleId: '%env(APPLE_BUNDLE_ID)%'
+  SocialVerification\Verification\SocialTokenVerificationService:
+        public: true # or false, depending on your needs
+  SocialVerification\:
+      resource: '../src/*'
+      exclude: '../src/{DependencyInjection,Entity,Migrations,Tests,Kernel.php}'

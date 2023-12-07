@@ -1,11 +1,17 @@
 <?php
 
-namespace SimpleConnections\SocialVerification\Verification;
+namespace SocialVerification\Verification;
 
 use App\Entity\User;
 use App\Repository\UserRepository;
-use SimpleConnections\SocialVerification\Response\iSocialVerificationResponse;
+use SocialVerification\Response\iSocialVerificationResponse;
 
+
+use Symfony\Component\DependencyInjection\Annotation\Service;
+
+/**
+ * @Service
+ */
 class SocialTokenVerificationService
 {
     public function __construct(

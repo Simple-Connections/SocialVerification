@@ -1,8 +1,8 @@
 <?php
 
-namespace SimpleConnections\SocialVerification\Verification;
+namespace SocialVerification\Verification;
 
-use SimpleConnections\SocialVerification\Response\FacebookVerificationResponse;
+use SocialVerification\Response\FacebookVerificationResponse;
 
 class FacebookVerificationService implements iSocialVerificationService
 {

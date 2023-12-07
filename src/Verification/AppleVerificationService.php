@@ -1,8 +1,8 @@
 <?php
 
-namespace SimpleConnections\SocialVerification\Verification;
+namespace SocialVerification\Verification;
 
-use SimpleConnections\SocialVerification\Response\AppleVerificationResponse;
+use SocialVerification\Response\AppleVerificationResponse;
 use DateTimeImmutable;
 use Lcobucci\JWT\Encoding\ChainedFormatter;
 use Lcobucci\JWT\Encoding\JoseEncoder;

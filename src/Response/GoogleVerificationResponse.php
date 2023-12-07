@@ -1,6 +1,6 @@
 <?php
 
-namespace SimpleConnections\SocialVerification\Response;
+namespace SocialVerification\Response;
 
 class GoogleVerificationResponse implements iSocialVerificationResponse
 {

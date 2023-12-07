@@ -1,8 +1,8 @@
 <?php
 
-namespace SimpleConnections\SocialVerification\Verification;
+namespace SocialVerification\Verification;
 
-use SimpleConnections\SocialVerification\Response\GoogleVerificationResponse;
+use SocialVerification\Response\GoogleVerificationResponse;
 
 class GoogleVerificationService implements iSocialVerificationService
 {
